@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>сайт</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <header>
+    <div id="logo" onclick="slowScroll('#top')">
+      <span>Animation</span>
+    </div>
+    <div id="about">
+      <a href="#" title="История" onclick="slowScroll('#main')">История</a>
+      <a href="#" onclick="slowScroll('#overview')" title="Примеры">Примеры</a>
+      <a href="#" onclick="slowScroll('#contacts')" title="Современные технологии">Современные технологии</a>
+      <a href="#" onclick="slowScroll('#faq')" title="Сведения о разработчике">Сведения о разработчике</a>
+    </div>
+  </header>
+
+  <div id="top">
+    <h1>Мир анимации</h1>
+    <h3>Мультимедийные технологии в анимации</h3>
+  </div>
+
+  <div id="main">
+    <div class="intro">
+      <h2>История</h2>
+      <span>Первые технологии в анимации</span>
+    </div>
+    <div class="text">
+      <span>Первые студии анимации появились уже в 1919-1920 годах. Конечно, в то время мультфильмы не использвали технолоогии.Классический вид мультипликации, при котором художник последовательно прорисовывает на полупрозрачных листах бумаги или на прозрачной плёнке каждую фазу движения персонажа (производит «фазовку»), затем каждый рисунок фотографируется, а из получившихся кадров составляется мультфильм. Стоит отметить такие технологии как ротоскопирование — техника, при которой мультфильм создаётся путём обрисовки кадр за кадром предварительно отснятого фильма с реальными актёрами и декорациями,  squigglevision — это запатентованный метод, при котором компьютерная программа делает контуры нарисованных объектов непрерывно колеблющимися.
+    </div>
+  </div>
+
+  <div id="overview">
+    <h2>Мы прошли долгий путь</h2>
+    <h4>От рисованных картинок. До компьютерной анимации </h4>
+
+    <div class="img">
+      <img src="https://i.gifer.com/origin/7e/7e88c9b3b61e00121dbec00b03e872da.gif" alt="">
+      <span>Пароход Вилли 1928 Г.</span>
+    </div>
+    <div class="img">
+      <img src="https://media0.giphy.com/media/jpuY4XbAu0viI7oDx7/giphy.gif?cid=ecf05e47mbisk9wjpv2clgsfo180x2psiayeok6r0eozv3qw&rid=giphy.gif&ct=g" alt="">
+      <span>Тайна Коко 2017 Г.</span>
+    </div>
+  </div>
+
+  <div id="contacts">
+    <div class="intro">
+      <h3>CGI</h3>
+      <span>CGI (компьютерные изображения) произвели революцию в анимации. Принципиальное отличие CGI-анимации от традиционной состоит в том, что рисование заменено 3D-моделированием, почти как виртуальная версия покадровой анимации.</span>
+    </div>
+    <div class="text">
+      <span>Современные технологии используют все мощности компьютера для создания анимации высокого уровня. Используются различные программы такие как: RenderMan и Presto от Pixar, Adobe animation от Adobe, Toon Boom и многие другие. Современные технлогии почти полностью вытеснили рисованую анимацию.
+    </div>
+    
+  </div>
+
+  <div id="faq">
+    <div>
+      <span class="title">Выполнил</span><br>
+      <span class="heading">Алтайбаев Даниэль вт 20-3</span>
+   
+      
+    </div>
+    <div>
+      <span class="title">Лабораторная работа</span><br>
+      <span class="heading">По дисциплине мультимедийные технологии</span>
+    
+    </div>
+    <div>
+      <span class="title">Контакты</span><br>
+      <span class="heading">Телефон:8(113)199-51-23</span>
+      <p></p>
+      <span class="heading">Почта:Animation@mouse.com</span>
+      <p></p>
+      <span class="heading">Адрес: Эмеривилл, Калифорния, США</span>
+      <p></p>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+  </script>
+</body>
+</html>
