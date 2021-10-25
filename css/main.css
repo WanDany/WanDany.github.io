@@ -100,8 +100,10 @@ header.fixed #logo {
 /* Главный блок на сайте */
 
 #top {
- <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-<lottie-player src="https://assets7.lottiefiles.com/private_files/lf30_wyfpergc.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;" hover loop  autoplay></lottie-player>
+width: 100%;
+  background-image: url(https://images3.alphacoders.com/114/1147809.jpg);
+  background-blend-mode: multiply;
+  background-color: #616161;
   background-size: cover;
   text-align: center;
   color: #fff;
