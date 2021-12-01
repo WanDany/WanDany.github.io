@@ -74,7 +74,7 @@ header #logo span {
 #about > a {color: #e6eceb}
 
 #about > a:hover {
-  color: #e6eceb;
+  color: #808080;
   text-decoration: underline;
 }
 
