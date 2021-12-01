@@ -95,7 +95,7 @@ header.fixed #logo {
 }
 
 .fixed #about a {color: #e6eceb}
-.fixed #about a:hover {color: #e6eceb}
+.fixed #about a:hover {color: #808080}
 
 /* Главный блок на сайте */
 
@@ -304,13 +304,14 @@ width: 100%;
   max-width: 500px;
 }
 
-/*  */
+/* Наши работы */
 
 #faq {
   background-image: url(https://psv4.userapi.com/c536132/u506838934/docs/d30/ea6150a668c6/vyglyadyvae.gif?extra=akP8vTWDHCSB2YN3jGX9hpFwsJ5vxhPul3YQNC9YvIHLxKPjjJ8guK1js61fmQnp5SUs7_btRUcRmcEfv8eRj2el-NheWBvTCxLd9T_Tuv8oZQK72-9EEVKc1JUgCdrBlih2u92H_6BtFTuufMDIfhEs);
   background-blend-mode: multiply;
   background-color: #616161;
   background-size: cover;
+
   border-top: 2px solid #005f89;
   width: 100%;
   float: left;
@@ -348,13 +349,7 @@ width: 100%;
   font-weight: bold;
 }
 
-#faq p {
-  font-family: 'Amatic SC', serif;
-  -webkit-font-smoothing: antialiased;
-  color: #fff;
-  font-size: 0.95em;
-  margin-bottom: 40px;
-}
+
 /* контакты*/
 #contacts2 {
   float: left;
