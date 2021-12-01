@@ -146,9 +146,9 @@ width: 100%;
   color: #e6eceb;
 }
 
-/* Блок с возможностями */
+/* Блок о нас */
 
-#main {
+#Onas {
   float: left;
   background-color: #005f89;
   border-top: 6px solid #005f89;
@@ -157,36 +157,36 @@ width: 100%;
 }
 
 @media (min-width: 1401px) {
-  #main {
+  #Onas {
     padding: 100px 20%;
     width: 60%;
   }
 }
 
 @media (max-width: 1400px) {
-  #main {
+  #Onas {
     padding: 100px 10%;
     width: 80%;
   }
 }
 
 @media (max-width: 700px) {
-  #main div {
+  #Onas div {
     width: 98%!important;
     margin-bottom: 20px;
   }
 }
 
-#main div {
+#Onas div {
   width: 48%;
   margin-right: 2%;
   float: left;
 }
 
-#main h2 {font-size: 3em}
-#main span {color: #e6eceb}
+#Onas h2 {font-size: 3em}
+#Onas span {color: #e6eceb}
 
-#main img {
+#Onas img {
   background: #e6eceb;
   padding: 5px;
   border: 2px solid #e6eceb;
@@ -194,7 +194,7 @@ width: 100%;
   width: 100%;
   max-width: 500px;
 }
-/*  */
+/* Процесс создания */
 
 #overview {
   float: left;
@@ -257,8 +257,8 @@ width: 100%;
   }
 }
 
-/* контакты*/
-#contacts {
+/*чем занимаемся*/
+#What {
   float: left;
   background-color: #005f89;
   border-top: 2px solid #005f89;
@@ -267,35 +267,35 @@ width: 100%;
 }
 
 @media (min-width: 1401px) {
-  #contacts {
+  #What {
     padding: 100px 20%;
     width: 60%;
   }
 }
 
 @media (max-width: 1400px) {
-  #contacts {
+  #What {
     padding: 100px 10%;
     width: 80%;
   }
 }
 
 @media (max-width: 700px) {
-  #contacts div {
+  #What div {
     width: 98%!important;
     margin-bottom: 20px;
   }
 }
 
-#contacts div {
+#What div {
   width: 48%;
   margin-right: 2%;
   float: left;
 }
 
-#contacts h3 {font-size: 3em}
-#contacts span {color: #e6eceb}
-#contacts img {
+#What h3 {font-size: 3em}
+#What span {color: #e6eceb}
+#What img {
   background: #fafafa;
   padding: 5px;
   border: 2px solid #e6eceb;
@@ -304,9 +304,9 @@ width: 100%;
   max-width: 500px;
 }
 
-/*  */
+/*Блок с работами*/
 
-#faq {
+#work {
   background-image: url(https://psv4.userapi.com/c536132/u506838934/docs/d30/ea6150a668c6/vyglyadyvae.gif?extra=akP8vTWDHCSB2YN3jGX9hpFwsJ5vxhPul3YQNC9YvIHLxKPjjJ8guK1js61fmQnp5SUs7_btRUcRmcEfv8eRj2el-NheWBvTCxLd9T_Tuv8oZQK72-9EEVKc1JUgCdrBlih2u92H_6BtFTuufMDIfhEs);
   background-blend-mode: multiply;
   background-color: #616161;
@@ -319,7 +319,7 @@ width: 100%;
 }
 
 @media (min-width: 801px) {
-  #faq div {
+  #work div {
     width: 25%;
     margin-left: 6%;
     float: left;
@@ -328,27 +328,27 @@ width: 100%;
 
 
 @media (max-width: 800px) {
-  #faq div {
+  #work div {
     width: 80%;
     margin-left: 10%;
     float: left;
   }
 }
 
-#faq .title {
+#work .title {
   font-weight: lighter;
   color: #fff;
   margin-bottom: 20px;
   font-size: 2.2em;
 }
 
-#faq .heading {
+#work .heading {
   color: #b7b7b7;
   font-size: 1.6em;
   font-weight: bold;
 }
 
-#faq p {
+#work p {
   font-family: 'Amatic SC', serif;
   -webkit-font-smoothing: antialiased;
   color: #fff;
