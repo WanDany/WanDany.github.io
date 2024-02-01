@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>РВС</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://wallpaperaccess.com/full/634013.jpg');
+            background-size: cover;
+            filter: blur(2px); /* Размытие фона */
+            z-index: -1; /* Установите нижний z-index, чтобы фон был под всем остальным контентом */
+        }
+
+        #content {
+            z-index: 1; /* Установите более высокий z-index, чтобы контент был над фоном */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="background"></div>
+    <div id="content">
+    <div id="slider">
+   <input type="radio" name="slider" id="slide1" checked>
+   <input type="radio" name="slider" id="slide2">
+   <input type="radio" name="slider" id="slide3">
+   <input type="radio" name="slider" id="slide4">
+   <div id="slides">
+      <div id="overflow">
+         <div class="inner">
+            <div class="slide slide_1">
+               <div class="slide-content">
+                  <h2>Сайт с информацией о дате, </p>времени и местонахождении</p></h2>
+                  <p>Нажмиете --></p>
+               </div>
+            </div>
+            <div class="slide slide_2">
+               <div class="slide-content">
+                  <h2>Местонахождение, день недели </p> и время с сайта "World Time Server":</p></h2>
+                  <p>{{ location_and_time_worldtimeserver }}</p>
+               </div>
+            </div>
+            <div class="slide slide_3">
+               <div class="slide-content">
+                  <h2>День, месяц и год с сайта "Time and Date":</h2>
+                  <p>{{ date_timeanddate }}</p>
+               </div>
+            </div>
+            <div class="slide slide_4">
+               <div class="slide-content">
+                  <img src="https://www.hdwallpapers.in/thumbs/2020/stitch_is_sitting_on_sand_4k_5k_hd_stitch-t2.jpg">
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="controls">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+   <div id="bullets">
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+   </div>
+</div>
+</body>
+</html>
